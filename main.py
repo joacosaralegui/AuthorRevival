@@ -38,10 +38,8 @@ model.add(Dense(Y_modified.shape[1], activation='softmax'))
 
 model.compile(loss='categorical_crossentropy', optimizer='adam')
 
-"""
-model.fit(X_modified, Y_modified, epochs=10, batch_size=100)
+model.fit(X_modified, Y_modified, epochs=100, batch_size=50)
 model.save_weights('text_generator_400_0.2_400_0.2_100.h5')
-"""
 
 model.load_weights('text_generator_400_0.2_400_0.2_100.h5')
 
